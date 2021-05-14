@@ -102,7 +102,7 @@
       </style>
     </head>
     <body>
-      <div id="unity-container" class="unity-desktop">
+      <div id="unity-container">
         <canvas id="unity-canvas" width=1080 height=600></canvas>
         <div id="unity-loading-bar">
           <div id="unity-logo"></div>
@@ -143,7 +143,6 @@
         // config.matchWebGLToCanvasSize = false;
   
         if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
-          container.className = "unity-mobile";
           // Avoid draining fillrate performance on mobile devices,
           // and default/override low DPI mode on mobile browsers.
           config.devicePixelRatio = 1;
